@@ -16,6 +16,7 @@ class Book
   end
 
   def publication_year
-    @publication_date
+    year = @publication_date.partition(",")
+    year[2].strip
   end
 end
