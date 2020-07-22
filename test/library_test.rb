@@ -32,5 +32,6 @@ class LibraryTest < Minitest::Test
     dpl.add_author(harper_lee)
 
     assert_equal [charlotte_bronte, harper_lee], dpl.authors
+    assert_equal [jane_eyre, professor,villette,mockingbird], dpl.books
   end
 end
